@@ -25,8 +25,8 @@ cors = CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
 
 # db = MySQLdb.Connect(host="containers-us-west-78.railway.app", port=5480,
 #                      user="root", passwd="F09DY9R7wJEsodY9LB1B", db="railway")
-db = psycopg2.connect(database=os.getenv('DATABASE_NAME'), user=os.getenv('DATABASE_USER'),
-                        password=os.getenv('PASSWORD'), host=os.getenv('DATABASE_HOST'), port='5432', keepalives=1, keepalives_idle=30,
+db = psycopg2.connect(database=os.getenv('postgres'), user=os.getenv('postgres'),
+                        password=os.getenv('Utkarsh@123'), host=os.getenv('localhost'), port='5432', keepalives=1, keepalives_idle=30,
                         keepalives_interval=10, keepalives_count=5)
 
 # # Get all the services
